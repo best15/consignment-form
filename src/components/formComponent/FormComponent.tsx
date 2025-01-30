@@ -311,7 +311,11 @@ const FormComponent = () => {
                 max: { value: 12, message: "Width must be less than 12" },
               }}
               render={({ field }) => (
-                <CustomTextField field={field} error={!!errors.width} placeholder="Width" />
+                <CustomTextField
+                  field={field}
+                  error={!!errors.width}
+                  placeholder="Width"
+                />
               )}
             />
             <DimensionFieldLabel label="Height" />
@@ -324,7 +328,11 @@ const FormComponent = () => {
                 max: { value: 12, message: "Height must be less than 12" },
               }}
               render={({ field }) => (
-                <CustomTextField field={field} error={!!errors.height} placeholder="Height" />
+                <CustomTextField
+                  field={field}
+                  error={!!errors.height}
+                  placeholder="Height"
+                />
               )}
             />
             <DimensionFieldLabel label="Depth" />
@@ -337,7 +345,11 @@ const FormComponent = () => {
                 max: { value: 12, message: "Depth must be less than 12" },
               }}
               render={({ field }) => (
-                <CustomTextField field={field} error={!!errors.depth} placeholder="Depth" />
+                <CustomTextField
+                  field={field}
+                  error={!!errors.depth}
+                  placeholder="Depth"
+                />
               )}
             />
           </Box>

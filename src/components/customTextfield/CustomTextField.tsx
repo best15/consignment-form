@@ -1,9 +1,5 @@
 import { TextField } from "@mui/material";
-import {
-  FieldValues,
-  FieldPath,
-  ControllerRenderProps,
-} from "react-hook-form";
+import { FieldValues, FieldPath, ControllerRenderProps } from "react-hook-form";
 
 interface CustomTextFieldProps<T extends FieldValues> {
   field: ControllerRenderProps<T, FieldPath<T>>;
@@ -14,7 +10,7 @@ interface CustomTextFieldProps<T extends FieldValues> {
 export default function CustomTextField<T extends FieldValues>({
   field,
   error,
-  placeholder
+  placeholder,
 }: CustomTextFieldProps<T>) {
   return (
     <TextField
