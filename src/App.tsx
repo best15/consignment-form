@@ -1,6 +1,8 @@
+import { ToastContainer } from "react-toastify";
 import { styled } from '@mui/material/styles';
 
 import './App.css'
+import FormComponent from './components/formComponent/FormComponent';
 
 function App() {
   const Main = styled('main')(({ theme }) => ({
@@ -12,7 +14,7 @@ function App() {
     minHeight: '100vh',
     minWidth: '100vw',
     maxWidth: '100vw',
-    backgroundColor: '#9E9E9E',
+    backgroundColor: '#F2F2F2',
     [theme.breakpoints.down('sm')]: {
       width: '98vw',
       overflowX: 'hidden',
@@ -22,7 +24,8 @@ function App() {
   return (
     <>
     <Main>
-        <h1>Consignment Form</h1>
+      <FormComponent />
+      <ToastContainer />
     </Main>
     </>
   )

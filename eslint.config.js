@@ -10,6 +10,8 @@ export default tseslint.config(
     extends: [
       js.configs.recommended,
        ...tseslint.configs.recommended,
+       "react-app",
+       "react-app/jest",
        'eslint:recommended',
        'plugin:@typescript-eslint/recommended',
        'plugin:react-hooks/recommended',
